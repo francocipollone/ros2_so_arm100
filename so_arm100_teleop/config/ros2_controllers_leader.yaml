@@ -1,0 +1,8 @@
+# Leader arm controllers — only the joint_state_broadcaster is needed
+# since the leader arm is passive (read-only, no torque).
+controller_manager:
+  ros__parameters:
+    update_rate: 50  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster

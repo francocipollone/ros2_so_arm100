@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+"""Entry point for the leader teleop node."""
+from so_arm100_teleop.leader_teleop_node import main
+
+main()

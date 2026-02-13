@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<package format="3">
+  <name>so_arm100_teleop</name>
+  <version>0.0.1</version>
+  <description>
+    Leader-follower teleoperation for the SO-ARM100.
+    Brings up a passive leader arm (torque-disabled) and bridges its
+    joint states to a follower arm's forward_position_controller.
+  </description>
+  <maintainer email="franco.cipollone@ekumenlabs.com">Franco Cipollone</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <exec_depend>so_arm100_description</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>joint_state_broadcaster</exec_depend>
+  <exec_depend>feetech_ros2_driver</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
